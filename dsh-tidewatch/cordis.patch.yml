@@ -1,0 +1,6 @@
+# dsh-tidewatch bundle patch：把宿主半边作为一行插入 composition。
+# 客户端半边由 package.json 的 dsh.client 声明，经 client-modules 扫描后在
+# 浏览器侧加载（lib/client.js 为 __ModuleLoader__ bundle）。
+- insert:
+    - id: dsh-tidewatch
+      name: 'dsh-tidewatch'
